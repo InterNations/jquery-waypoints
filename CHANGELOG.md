@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.0.4
+
+- Fix enable, disable, and destroys calls not chaining the jQuery object. (Issue #244) (Thanks [@robharper](https://github.com/robharper))
+- Fix destroy not unregistering internal waypoint references if underlying node has been removed from the document, causing memory leaks. (Issue #243)
+
+## v2.0.3
+
+- Add "unsticky" function for sticky shortcut. (Issue #130)
+- Exit early from Infinite shortcut if no "more" link exists. (Issue #140)
+- Delay height evaluation of sticky shortcut wrapper. (Issue #151)
+- Fix errors with Infinite shortcut's parsing of HTML with jQuery 1.9+. (Issue #163)
+
+
 ## v2.0.2
 
 - Add AMD support. (Issue #116)
